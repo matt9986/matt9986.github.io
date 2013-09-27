@@ -1,5 +1,6 @@
 body {
-  background-image: url('CodeMultiBlurred.jpg');
+  background-color: #1e1e1e;
+  background-image: url('blurredCode.jpg');
   font-family: sans-serif;
 }
 div {
