@@ -1,4 +1,4 @@
 matt9986.github.io
 ==================
 
-A portfolio simple page for matt-purdy.com
+A simple portfolio page for matt-purdy.com
