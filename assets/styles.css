@@ -3,7 +3,7 @@ body {
   background-image: url('blurredCode.jpg');
   font-family: sans-serif;
 }
-div {
+div.content {
   margin: auto;
   width: 50%;
   border-radius: 15px;
