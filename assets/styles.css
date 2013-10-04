@@ -10,3 +10,7 @@ div.content {
   background-color: white;
   padding: 20px;
 }
+#asteroidModal {
+  width: 80%;
+  height 60%;
+}
