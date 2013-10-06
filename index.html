@@ -11,7 +11,7 @@
     <script type="application/javascript" src="assets/bootstrap/bootstrap.js"></script>
   </head>
   <body>
-    <div class="content">
+    <div class="content col-md-6 col-md-offset-3">
       <h2>Matt Purdy</h2>
       <h4>Summary</h4>
       <p>Web developer proficient in Ruby, Rails, Javascript, Backbone.js, JQuery, SQL. Experience using Amazon Web Services for database and website deployment.</p>
@@ -51,9 +51,12 @@
       <h4>Games</h4>
       <p><a href="/Asteroids" id="openAsteroidModal">Asteroids</a> <button type="button" data-toggle="modal" data-target="#asteroidModal">Launch!</button></p>
     </div>
-    <div class="modal fade" id="asteroidModal" role="dialog" >
+    <div class="modal" id="asteroidModal" role="dialog" >
       <div class="modal-dialog">
         <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Asteroids</h4>
+          </div>
           <div class="modal-body" id="asteroidsGame"></div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
