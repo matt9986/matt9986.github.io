@@ -7,7 +7,7 @@ $(function(){
     if (game) {
       game.restart();
     }else{
-      game ||= new Asteroids.Game();
+      game = new Asteroids.Game();
       game.start();
     }
   });
