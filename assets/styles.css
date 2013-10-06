@@ -12,3 +12,7 @@ div.content {
   height: 100%;
   padding: 0;
 }
+.modal-dialog {
+  width: 90%;
+  height: 90%;
+}
