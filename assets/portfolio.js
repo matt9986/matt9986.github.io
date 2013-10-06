@@ -3,7 +3,7 @@ $(function(){
     $("#asteroidModal").modal()
   });
   $("#asteroidModal").on("shown.bs.modal", function(){
-    var game = new Asteroids.game();
+    var game = new Asteroids.Game();
     game.start();
   });
 });
