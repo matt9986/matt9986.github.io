@@ -14,42 +14,48 @@
     <div class="content col-md-6 col-md-offset-3">
       <h2>Matt Purdy</h2>
       <h4>Summary</h4>
-      <p>Web developer proficient in PHP, Ruby, Ruby on Rails, Javascript, Backbone.js, JQuery, SQL, HTML, CSS. Experience using Amazon Web Services for database and website deployment.</p>
+      <p>Web developer proficient in Elixir, C#, Ruby, Ruby on Rails, Javascript, Backbone.js, JQuery, Ansible, PHP, SQL, HTML, CSS. Experience using Amazon Web Services and Google Cloud for database and website deployment.</p>
       <h4>Projects</h4>
       <ul>
         <li>
           <p>Viva Voce:</p>
           <p>Yelp clone as a single-page web-app. Caught and fixed n+1 queries. Custom-built business search. Safely bootstrapped data on initial page load to reduce server queries and load times.</p>
           <p>Backbone.js, Rails, JavaScript, Ruby, SQL, jQuery, AWS</p>
-          <p>Check out the code: <a href="https://github.com/matt9986/VivaVoce"><img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" height="20" width="20"></a></p>
+          <p>Check out the code: <a href="https://github.com/matt9986/VivaVoce"><img src="assets/GitHub-Mark-32px.png" height="20" width="20"></a></p>
         </li>
         <li>
           <p>ActiveRecord Lite:</p>
           <p>ActiveRecord clone. Implemented mass assignment, avoided SQL injection vulnerability by escaping SQL queries, and included model-to-model associations.</p>
           <p>Ruby, SQL</p>
-          <p>Check out the code: <a href="https://github.com/matt9986/FakeActiveRecord"><img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" height="20" width="20"></a></p>
+          <p>Check out the code: <a href="https://github.com/matt9986/FakeActiveRecord"><img src="assets/GitHub-Mark-32px.png" height="20" width="20"></a></p>
         </li>
         <li>
           <p>Rails Lite:</p>
           <p>Recreated Rails. Created a WEBrick server to handle incoming requests and a regular-expression based router to direct the requests. Used cookies to implement session flash storage. Implemented protection from cross-site request forgery using CSRF tokens.</p>
           <p>Ruby, Regex</p>
-          <p>Check out the code: <a href="https://github.com/matt9986/RailsLite"><img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" height="20" width="20"></a></p>
+          <p>Check out the code: <a href="https://github.com/matt9986/RailsLite"><img src="assets/GitHub-Mark-32px.png" height="20" width="20"></a></p>
         </li>
       </ul>
       <h4>Technologies</h4>
       <ul>
-        <li>PHP, Ruby, JavaScript, Rails, BackboneJS, jQuery, SQL, HTML, CSS. Some knowledge of C++.</li>
+        <li>Elixir, C#, Ruby, JavaScript, PHP, Rails, BackboneJS, jQuery, SQL, HTML, CSS. Some knowledge of C++.</li>
+        <li>Kafka, Docker, Kibana, D3, Memcached, Redis, MySQL, PostgreSql</li>
         <li>Windows, Macintosh, Linux, and Chrome OS.</li>
         <li>Gaussian, ArgusLab, Microsoft Office Suite, Adobe Creative Suite.</li>
       </ul>
       <h4>Find me on</h4>
-      <p><a href="https://www.linkedin.com/in/purdymatt">LinkedIn <img src="http://press.linkedin.com/display-media/206/4" height="20" width="20"></a></p>
-      <p><a href="https://github.com/matt9986">GitHub <img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" height="20" width="20"></a></p>
+      <p><a href="https://www.linkedin.com/in/purdymatt">LinkedIn <img src="assets/LI-In-Bug.png" height="20" width="20"></a></p>
+      <p><a href="https://github.com/matt9986">GitHub <img src="assets/GitHub-Mark-32px.png" height="20" width="20"></a></p>
       <p><a href="https://www.dropbox.com/s/13x6me2km3v6qtx/Matthew%20Purdy%20Resume.pdf?dl=1">Resume</a></p>
       <h4>Contact</h4>
       <p>Email: <a href="mailto:matt9986@gmail.com">matt9986@gmail.com</a></p>
       <h4>Games</h4>
       <p><a href="/Asteroids">Asteroids</a> <button type="button" data-toggle="modal" data-target="#asteroidModal">Launch!</button></p>
+      <p>
+        <a href="/js_snake">JsSnake</a>
+        <button type="button" data-toggle="modal" data-target="#faviconSnake">Launch in Favicon!</button>
+        <button type="button" data-toggle="modal" data-target="#modalSnake">Launch in Modal!</button>
+      </p>
     </div>
     <div class="modal" id="asteroidModal" role="dialog" >
       <div class="modal-dialog">
@@ -58,6 +64,39 @@
             <h4 class="modal-title">Asteroids</h4>
           </div>
           <div class="modal-body" id="asteroidsGame"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="faviconSnake" role="dialog" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">JsSnake</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              This game can be found in the favicon (the icon for this browser tab at the top of your screen). The snake is controlled with left and right arrow keys. Press any button to start.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalSnake" role="dialog" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">JsSnake</h4>
+          </div>
+          <div class="modal-body">
+            <canvas id="snake-game-target"></canvas>
+            <p>The snake is controlled with left and right arrow keys. Press any button to start.</p>
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
