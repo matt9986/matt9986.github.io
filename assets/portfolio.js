@@ -9,17 +9,17 @@ $(function(){
     }
   });
   var faviconSnake;
-  $("#asteroidModal").on("shown.bs.modal", function(){
+  $("#faviconSnake").on("shown.bs.modal", function(){
     if (!faviconSnake) {
       JsSnake.SnakeGame.snake_game(new JsSnake.FaviconDisplay.FaviconDisplay(document))
       faviconSnake = true;
     }
   });
-  var canvasSnake;
-  $("#asteroidModal").on("shown.bs.modal", function(){
-    if (!canvasSnake) {
+  var modalSnake;
+  $("#modalSnake").on("shown.bs.modal", function(){
+    if (!modalSnake) {
       JsSnake.SnakeGame.snake_game(new JsSnake.CanvasDisplay.CanvasDisplay(document.getElementById('snake-game-target')))
-      asteroidGame = true;
+      modalSnake = true;
     }
   });
 });
